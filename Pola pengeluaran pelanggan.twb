@@ -1,0 +1,557 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Pola pengeluaran pelanggan (Dataset latihan)' inline='true' name='federated.13bh7851c39btu1etmjeu0rn7ylp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Dataset latihan' name='excel-direct.19ki9l103e266913ysjmk06sgdeu'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/yuzad/OneDrive/Dokumen/TUGAS/PTI/Dataset latihan.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.19ki9l103e266913ysjmk06sgdeu' name='Pola pengeluaran pelanggan' table='[&apos;Pola pengeluaran pelanggan$&apos;]' type='table'>
+          <columns gridOrigin='B2:H5:no:B2:H5:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Region' ordinal='0' />
+            <column datatype='real' name='Fresh' ordinal='1' />
+            <column datatype='real' name='Milk' ordinal='2' />
+            <column datatype='real' name='Grocery' ordinal='3' />
+            <column datatype='real' name='Frozen' ordinal='4' />
+            <column datatype='real' name='Detergents_paper' ordinal='5' />
+            <column datatype='real' name='Delicassen' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Pola pengeluaran pelanggan]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;B2:H5:no:B2:H5:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[Pola pengeluaran pelanggan]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fresh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Fresh]</local-name>
+            <parent-name>[Pola pengeluaran pelanggan]</parent-name>
+            <remote-alias>Fresh</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Milk</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Milk]</local-name>
+            <parent-name>[Pola pengeluaran pelanggan]</parent-name>
+            <remote-alias>Milk</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Grocery</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Grocery]</local-name>
+            <parent-name>[Pola pengeluaran pelanggan]</parent-name>
+            <remote-alias>Grocery</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Frozen</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Frozen]</local-name>
+            <parent-name>[Pola pengeluaran pelanggan]</parent-name>
+            <remote-alias>Frozen</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Detergents_paper</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Detergents_paper]</local-name>
+            <parent-name>[Pola pengeluaran pelanggan]</parent-name>
+            <remote-alias>Detergents_paper</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delicassen</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Delicassen]</local-name>
+            <parent-name>[Pola pengeluaran pelanggan]</parent-name>
+            <remote-alias>Delicassen</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Delicassen]' role='measure' type='quantitative' />
+      <column caption='Detergents paper' datatype='real' name='[Detergents_paper]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Fresh]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Frozen]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Grocery]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Milk]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Region]' role='measure' type='quantitative' />
+      <column caption='Pola pengeluaran pelanggan' datatype='table' name='[__tableau_internal_object_id__].[Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Delicassen]' derivation='Sum' name='[sum:Delicassen:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Detergents_paper]' derivation='Sum' name='[sum:Detergents_paper:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Fresh]' derivation='Sum' name='[sum:Fresh:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Frozen]' derivation='Sum' name='[sum:Frozen:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Grocery]' derivation='Sum' name='[sum:Grocery:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Milk]' derivation='Sum' name='[sum:Milk:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Region]' derivation='Sum' name='[sum:Region:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/yuzad/AppData/Local/Temp/TableauTemp/#TableauTemp_0zk1cx704ararl0zl8ofk12mth72.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/18/2024 07:16:03 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Pola pengeluaran pelanggan</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fresh</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Fresh]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fresh</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Pola pengeluaran pelanggan</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Milk</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Milk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Milk</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Pola pengeluaran pelanggan</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Grocery</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Grocery]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Grocery</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Pola pengeluaran pelanggan</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Frozen</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Frozen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Frozen</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Pola pengeluaran pelanggan</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Detergents_paper</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Detergents_paper]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Detergents_paper</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Pola pengeluaran pelanggan</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Delicassen</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Delicassen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Delicassen</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Pola pengeluaran pelanggan</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Delicassen:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Milk:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Grocery:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[__tableau_internal_object_id__].[cnt:Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Frozen:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Region:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Fresh:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Detergents_paper:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Pola pengeluaran pelanggan' id='Pola pengeluaran pelanggan_7351038EC29E4CF499D7AE8AFC9DFBB5'>
+            <properties context=''>
+              <relation connection='excel-direct.19ki9l103e266913ysjmk06sgdeu' name='Pola pengeluaran pelanggan' table='[&apos;Pola pengeluaran pelanggan$&apos;]' type='table'>
+                <columns gridOrigin='B2:H5:no:B2:H5:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Region' ordinal='0' />
+                  <column datatype='real' name='Fresh' ordinal='1' />
+                  <column datatype='real' name='Milk' ordinal='2' />
+                  <column datatype='real' name='Grocery' ordinal='3' />
+                  <column datatype='real' name='Frozen' ordinal='4' />
+                  <column datatype='real' name='Detergents_paper' ordinal='5' />
+                  <column datatype='real' name='Delicassen' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Pola pengeluaran pelanggan setiap produk</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Pola pengeluaran pelanggan (Dataset latihan)' name='federated.13bh7851c39btu1etmjeu0rn7ylp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.13bh7851c39btu1etmjeu0rn7ylp'>
+            <column datatype='real' name='[Delicassen]' role='measure' type='quantitative' />
+            <column caption='Detergents paper' datatype='real' name='[Detergents_paper]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Fresh]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Frozen]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Grocery]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Milk]' role='measure' type='quantitative' />
+            <column-instance column='[Delicassen]' derivation='Sum' name='[sum:Delicassen:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Detergents_paper]' derivation='Sum' name='[sum:Detergents_paper:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Fresh]' derivation='Sum' name='[sum:Fresh:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Frozen]' derivation='Sum' name='[sum:Frozen:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Grocery]' derivation='Sum' name='[sum:Grocery:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Milk]' derivation='Sum' name='[sum:Milk:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.13bh7851c39btu1etmjeu0rn7ylp].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Fresh:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Milk:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Grocery:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Frozen:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Detergents_paper:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Delicassen:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.13bh7851c39btu1etmjeu0rn7ylp].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Fresh:qk]&quot;</bucket>
+              <bucket>&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Milk:qk]&quot;</bucket>
+              <bucket>&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Grocery:qk]&quot;</bucket>
+              <bucket>&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Frozen:qk]&quot;</bucket>
+              <bucket>&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Detergents_paper:qk]&quot;</bucket>
+              <bucket>&quot;[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Delicassen:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='quantitative' column='[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Delicassen:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Delicassen:qk]</column>
+            <column>[federated.13bh7851c39btu1etmjeu0rn7ylp].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.13bh7851c39btu1etmjeu0rn7ylp].[Multiple Values]' field-type='quantitative' max='37393.010990932664' min='-2524.5203515741837' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.13bh7851c39btu1etmjeu0rn7ylp].[:Measure Names]' value='98' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.13bh7851c39btu1etmjeu0rn7ylp].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f9a655' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.13bh7851c39btu1etmjeu0rn7ylp].[Multiple Values]</rows>
+        <cols>([federated.13bh7851c39btu1etmjeu0rn7ylp].[:Measure Names] / [federated.13bh7851c39btu1etmjeu0rn7ylp].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{65216EF8-48F1-4D79-B0AA-A803BD410EE3}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.13bh7851c39btu1etmjeu0rn7ylp].[sum:Delicassen:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='2' param='[federated.13bh7851c39btu1etmjeu0rn7ylp].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FB59A94C-1B4B-40E8-A085-C507428F7EE7}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      AAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

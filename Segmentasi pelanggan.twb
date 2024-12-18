@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Segmentasi pelanggan (Dataset latihan)' inline='true' name='federated.0lt6ywj10151y0166vs841gth9s3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Dataset latihan' name='excel-direct.0kjlk5s0olc8cm1gm8z5l1fovzen'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/yuzad/OneDrive/Dokumen/TUGAS/PTI/Dataset latihan.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0kjlk5s0olc8cm1gm8z5l1fovzen' name='Segmentasi pelanggan' table='[&apos;Segmentasi pelanggan$&apos;]' type='table'>
+          <columns gridOrigin='B2:D5:no:B2:D5:0' header='yes' outcome='6'>
+            <column datatype='string' name='Segmentasi pelanggan' ordinal='0' />
+            <column datatype='integer' name='Horeca' ordinal='1' />
+            <column datatype='integer' name='Retail' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Segmentasi pelanggan]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;B2:D5:no:B2:D5:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segmentasi pelanggan</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Segmentasi pelanggan]</local-name>
+            <parent-name>[Segmentasi pelanggan]</parent-name>
+            <remote-alias>Segmentasi pelanggan</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Segmentasi pelanggan_2C8DBA1FA0D944F88F6DE480EE179D5F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Horeca</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Horeca]</local-name>
+            <parent-name>[Segmentasi pelanggan]</parent-name>
+            <remote-alias>Horeca</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Segmentasi pelanggan_2C8DBA1FA0D944F88F6DE480EE179D5F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Retail</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Retail]</local-name>
+            <parent-name>[Segmentasi pelanggan]</parent-name>
+            <remote-alias>Retail</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Segmentasi pelanggan_2C8DBA1FA0D944F88F6DE480EE179D5F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Segmentasi pelanggan (Segmentasi pelanggan)' datatype='string' name='[Segmentasi pelanggan]' role='dimension' type='nominal' />
+      <column caption='Segmentasi pelanggan' datatype='table' name='[__tableau_internal_object_id__].[Segmentasi pelanggan_2C8DBA1FA0D944F88F6DE480EE179D5F]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/yuzad/AppData/Local/Temp/TableauTemp/#TableauTemp_1fndyil14cl8qr1aqny4716hqmhv.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/18/2024 11:14:15 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Segmentasi pelanggan</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Segmentasi pelanggan]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Segmentasi pelanggan</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Segmentasi pelanggan</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Segmentasi pelanggan_2C8DBA1FA0D944F88F6DE480EE179D5F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Horeca</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Horeca]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Horeca</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Segmentasi pelanggan</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Segmentasi pelanggan_2C8DBA1FA0D944F88F6DE480EE179D5F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Retail</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Retail]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Retail</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Segmentasi pelanggan</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Segmentasi pelanggan_2C8DBA1FA0D944F88F6DE480EE179D5F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Segmentasi pelanggan' id='Segmentasi pelanggan_2C8DBA1FA0D944F88F6DE480EE179D5F'>
+            <properties context=''>
+              <relation connection='excel-direct.0kjlk5s0olc8cm1gm8z5l1fovzen' name='Segmentasi pelanggan' table='[&apos;Segmentasi pelanggan$&apos;]' type='table'>
+                <columns gridOrigin='B2:D5:no:B2:D5:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Segmentasi pelanggan' ordinal='0' />
+                  <column datatype='integer' name='Horeca' ordinal='1' />
+                  <column datatype='integer' name='Retail' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Segmentasi pelanggan (Dataset latihan)' name='federated.0lt6ywj10151y0166vs841gth9s3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lt6ywj10151y0166vs841gth9s3'>
+            <column datatype='integer' name='[Horeca]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Retail]' role='measure' type='quantitative' />
+            <column caption='Segmentasi pelanggan (Segmentasi pelanggan)' datatype='string' name='[Segmentasi pelanggan]' role='dimension' type='nominal' />
+            <column caption='Segmentasi pelanggan' datatype='table' name='[__tableau_internal_object_id__].[Segmentasi pelanggan_2C8DBA1FA0D944F88F6DE480EE179D5F]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Segmentasi pelanggan_2C8DBA1FA0D944F88F6DE480EE179D5F]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Segmentasi pelanggan_2C8DBA1FA0D944F88F6DE480EE179D5F:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Segmentasi pelanggan]' derivation='None' name='[none:Segmentasi pelanggan:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Horeca]' derivation='Sum' name='[sum:Horeca:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Retail]' derivation='Sum' name='[sum:Retail:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0lt6ywj10151y0166vs841gth9s3].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0lt6ywj10151y0166vs841gth9s3].[sum:Horeca:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0lt6ywj10151y0166vs841gth9s3].[sum:Retail:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0lt6ywj10151y0166vs841gth9s3].[__tableau_internal_object_id__].[cnt:Segmentasi pelanggan_2C8DBA1FA0D944F88F6DE480EE179D5F:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.0lt6ywj10151y0166vs841gth9s3].[:Measure Names]</column>
+            <column>[federated.0lt6ywj10151y0166vs841gth9s3].[__tableau_internal_object_id__].[cnt:Segmentasi pelanggan_2C8DBA1FA0D944F88F6DE480EE179D5F:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0lt6ywj10151y0166vs841gth9s3].[sum:Horeca:qk]' field-type='quantitative' max='504' min='-2' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0lt6ywj10151y0166vs841gth9s3].[:Measure Names]' value='171' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='10' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0lt6ywj10151y0166vs841gth9s3].[sum:Horeca:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1.4832596778869629' />
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0lt6ywj10151y0166vs841gth9s3].[sum:Retail:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1.3183425664901733' />
+                <format attr='mark-color' value='#b07aa1' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0lt6ywj10151y0166vs841gth9s3].[sum:Horeca:qk] + [federated.0lt6ywj10151y0166vs841gth9s3].[sum:Retail:qk])</rows>
+        <cols>([federated.0lt6ywj10151y0166vs841gth9s3].[none:Segmentasi pelanggan:nk] / [federated.0lt6ywj10151y0166vs841gth9s3].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{B5E9CFC8-79E9-484D-85C9-412DBC26014B}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0C39852C-4B0A-45D3-9314-DAE4C7BD1810}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      ADJJnbk7D+gfLOxHPUKEqutuhKOTpxiVubTFMbV1d+hms4lSqusVtlotMpmvP63qUaGU2rHb
+      caAC7MbhHOIlsil0Y/u6fN/HdV2SyeM1McmX7Wt40vtW+d3/L34dcnv0p77qTTmKjuvt0Y/S
+      vj4aVXyO8jtsVuo0ahU6bnhjjffjDWnXyly7foOVjc2tx1zHxvU/+4zpWE1su0m5ejTmVauU
+      S/gBlMrl0La5P//8HnPXrnFn8cHWI4FSWHbnmeVms0WptPNrO3JDiZTnsLS4RMz0GBweY219
+      nYHhcWprS+T7hqluVigMDFJdX6E4NEZ9c5VYusjUxPBhl45VazB8YprSo4doToNStY3uVGjF
+      h5kqxljbbDLSn8NMJihVdfp6U4ddMhury1ieYnV1jXZtk5rlMTaQZ7lsU8ibVKpthgd6WSvV
+      GR4qsvx4jZNnz5JJxA65cg/NzEKnTa22yeNHy2QzGW4tLPHqS5dZfvyY4fFJnI5NrVKhv79v
+      27UcuW8AAE3X0XWd8uoG02fPUSuX0ONpdGuTuuPTqa1h9IxSyOo0Ww7Ly48Pu+SnfP744XvE
+      sgXuLy2hlCLfW+TE5ATVapXN0grVapUQv9i+ksaTT2RNC2h3FIPZBOVqlZHJEzx6+hqWNyqc
+      OzdDs1al09ikXD8a315rDxfYaHZYf7iEowKMRIrJE1O47Tqe02ZlvUyz1frSdRy5bwDdTDA1
+      fQJT89DNGA/uzjMyOQ1eh1w6QdW+R25ggmZ5hUqzSCqVoDjYe9hlA5Du7edb35mkXi7Re+o0
+      pUaH/sEB7q8+JpfJMjCcoDhQIJHOoBvaYZcLQP/IGPlCH6auEbgWlZbH2MgYZsLk1OnTlOod
+      JoaLzM8vUOjJkC0O0JM5Cnf/MHnh5dcwNBuMOO7KKtlcHrtZRYsXSGV6KPQXMfUnc9rt5P8B
+      46EWOBqd1C0AAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
